@@ -13,7 +13,7 @@ public class server {
             while (true) {
                 Socket socket = listener.accept();
                 try {
-                    ObjectOutputStream os = new ObjectOutputStream(socket.getOutputStream());
+                    //ObjectOutputStream os = new ObjectOutputStream(socket.getOutputStream());
                     ObjectInputStream is = new ObjectInputStream(socket.getInputStream());
 
                     Message m = (Message) is.readObject();

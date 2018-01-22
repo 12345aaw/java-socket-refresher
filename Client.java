@@ -28,6 +28,8 @@ public class Client {
         message.setContent(scan.nextLine());
         ObjectOutputStream os = new ObjectOutputStream(s.getOutputStream());
         os.writeObject(message);
+        scan.close();
+        s.close();
         System.exit(0);
     }
 
